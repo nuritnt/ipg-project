@@ -58,7 +58,7 @@ check_documents.log ist der Name der Log-Datei.
 
 Insgesamt bewirkt diese Zeile, dass alles, was normalerweise auf stdout geschrieben wird, sowohl auf die Konsole als auch in die angegebene Log-Datei geschrieben wird.
 
-`exec 2>&1``
+`exec 2>&1`
 Diese Zeile ändert die Umleitung für den Standardfehler (stderr).
 2>: gibt an, dass es sich um eine Umleitung für den Standardfehler (stderr) handelt. In der Bash ist 2 die Nummer, die stderr repräsentiert.
 &1: Hier wird stderr (2) auf den gleichen Ort umgeleitet wie stdout (1). Das & bedeutet, dass es sich um einen Dateideskriptor handelt, nicht um eine Datei selbst. In diesem Fall wird stderr auf denselben Ort umgeleitet wie stdout.
