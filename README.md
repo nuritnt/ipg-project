@@ -48,7 +48,7 @@ nano SOLL.txt
 
 
 ## Logging Erklärung
-![Screenshot Logging Code](/Logging.png)
+![Screenshot Logging Code](/logging.png)
 `exec > > (tee -a check_documents.log)`
 exec wird verwendet, um die Umleitung der Standardausgabe (stdout) zu ändern.
 >(tee -a check_documents.log) ist ein Prozess-Substitution-Konstrukt. Es erstellt eine Pipe, schreibt den Ausgabestrom von exec in die Pipe und übergibt ihn dann an tee.
