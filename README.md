@@ -8,6 +8,8 @@ It sums all the files and the documentation I have used for my final presentatio
 
 ## Beschreibung
 Erstellen eines GUI's, welches ein Bash Script auslöst. Es soll analyiseren, ob ein Input mit Array alle erfolgreich auf dem Server sind. Erst wird die Quersumme mit md5 Hash analysiert, wenn diese abweicht, wird ein Schlaufe durchlaufen, welches die fehlenden Dateinamen raussucht und zurück gibt.
+![Step 1](/Step1.png)
+![Step 2](/Step2.png)
 
 ## Präsentation
 Mittels `ssh -p 2222 normalo@localhost` auf lokalem Gerät einloggen (UTM läuft bereits)
@@ -46,6 +48,7 @@ nano SOLL.txt
 
 
 ## Logging Erklärung
+![Screenshot Logging Code](/Logging.png)
 `exec > > (tee -a check_documents.log)`
 exec wird verwendet, um die Umleitung der Standardausgabe (stdout) zu ändern.
 >(tee -a check_documents.log) ist ein Prozess-Substitution-Konstrukt. Es erstellt eine Pipe, schreibt den Ausgabestrom von exec in die Pipe und übergibt ihn dann an tee.
